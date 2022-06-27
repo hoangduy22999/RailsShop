@@ -4,6 +4,6 @@ class Users::DashboardController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @products = Product.all
+    @products = Product.all.page(params[:page]).per(Settings.PRODUCT_PER_PAGE)
   end
 end
