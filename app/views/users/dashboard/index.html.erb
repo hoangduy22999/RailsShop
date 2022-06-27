@@ -1,3 +1,6 @@
-<% @products.each do |index, product| %>
-    <%= product.name %> || <%= product.desc %>
-<% end %>
+<div class="row">
+  <% @products.each do |product| %>
+    <%= render product %>
+  <% end %>
+</div>
+<%= paginate @products %>
