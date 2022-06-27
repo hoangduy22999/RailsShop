@@ -7,6 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 p 'Start seeds:'
 
+p 'Category'
+require './db/seeds/category_sd.rb'
+
+p 'Discount'
+require './db/seeds/discount_sd.rb'
+
 p 'Products'
 require './db/seeds/product_sd.rb'
 
