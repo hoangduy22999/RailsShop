@@ -62,3 +62,5 @@ gem 'faker'
 gem 'kaminari'
 
 gem 'config'
+
+gem 'image_processing'
